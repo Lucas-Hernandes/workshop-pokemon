@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex V2</title>
+    <link rel="stylesheet" href="../homePageV2/homePageV2.css">
+</head>
+
+<body>
+    <header>
+        <img src="../../src/images/pokemonLogo.png" alt="Pokemon Logo" class="logo">
+    </header>
+    <div class="main-content">
+        <h1>Pokédex V2</h1>
+        <label for="geracaoSelect">Selecione a Geração de Pokémon:</label>
+        <select id="geracaoSelect" onchange="getGen(this.value)">
+            <option value="gen1">Geração 1</option>
+            <option value="gen2">Geração 2</option>
+            <option value="gen3">Geração 3</option>
+            <option value="gen4">Geração 4</option>
+            <option value="gen5">Geração 5</option>
+            <option value="gen6">Geração 6</option>
+            <option value="gen7">Geração 7</option>
+            <option value="gen8">Geração 8</option>
+            <option value="gen9">Geração 9</option>
+        </select>
+        <div id="pokemon-list" class="pokemon-list">
+            <!-- Pokémon serão populados aqui -->
+        </div>
+    </div>
+    <script src="../homePageV2/homePageV2.js"></script>
+</body>
+
+</html>
